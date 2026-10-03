@@ -1,3 +1,4 @@
+-- Creating database and tables
 create database lms;
 use lms;
 drop table if exists branch;
@@ -57,6 +58,7 @@ create table return_status(
     return_book_isbn varchar(20)
 );
 
+-- Adding foreign key constraint
 alter table issued_status
 add constraint fk_members
 foreign key (issued_member_id)
@@ -76,10 +78,6 @@ alter table return_status
 add constraint fk_issued_id
 foreign key (issued_id)
 references issued_status(issued_id);
-
--- alter table return_status
--- drop foreign key fk_return_book_isbn,
--- drop index fk_return_book_isbn;
 
 -- alter table employees
 -- add constraint fk_branch_id
