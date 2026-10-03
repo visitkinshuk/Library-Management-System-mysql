@@ -8,8 +8,8 @@ The project demonstrates practical implementation of database design, SQL queryi
 
 <img width="1645" height="1035" alt="image" src="https://github.com/user-attachments/assets/f7d83878-2dd1-4262-a66b-40b405fe3613" />
 
-Database Creation: Created a database named lms.
-Table Creation: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
+Task 1: Database Creation: Created a database named lms.
+		Table Creation: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and 				relationships.
 
 ```sql
 create database lms;
