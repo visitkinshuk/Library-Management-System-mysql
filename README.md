@@ -11,6 +11,7 @@ The project demonstrates practical implementation of database design, SQL queryi
 Database Creation: Created a database named lms.
 Table Creation: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
 
+```sql
 create database lms;
 use lms;
 drop table if exists branch;
@@ -102,6 +103,7 @@ add constraint fk_branch_id
 foreign key (branch_id)
 references branch(branch_id);
 
+```
 
 Key Features
 
