@@ -1,4 +1,4 @@
-
+-- Insert data into members table
 INSERT INTO members(member_id, member_name, member_address, reg_date) 
 VALUES
 ('C101', 'Alice Johnson', '123 Main St', '2021-05-15'),
@@ -16,7 +16,7 @@ VALUES
 SELECT * FROM members;
 
 
--- Insert values into each branch table
+-- Insert data into each branch table
 INSERT INTO branch(branch_id, manager_id, branch_address, contact_no) 
 VALUES
 ('B001', 'E109', '123 Main St', '+919099988676'),
@@ -27,7 +27,7 @@ VALUES
 SELECT * FROM branch;
 
 
--- Insert values into each employees table
+-- Insert data into each employees table
 INSERT INTO employees(emp_id, emp_name, position, salary, branch_id) 
 VALUES
 ('E101', 'John Doe', 'Clerk', 60000.00, 'B001'),
@@ -44,7 +44,7 @@ VALUES
 SELECT * FROM employees;
 
 
--- Inserting into books table 
+-- Inserting data books table 
 INSERT INTO books(isbn, book_title, category, rental_price, status, author, publisher) 
 VALUES
 ('978-0-553-29698-2', 'The Catcher in the Rye', 'Classic', 7.00, 'yes', 'J.D. Salinger', 'Little, Brown and Company'),
@@ -84,7 +84,7 @@ VALUES
 ('978-0-7432-7356-4', 'The Hobbit', 'Fantasy', 7.00, 'yes', 'J.R.R. Tolkien', 'Houghton Mifflin Harcourt');
 
 
--- inserting into issued table
+-- inserting data issued table
 INSERT INTO issued_status(issued_id, issued_member_id, issued_book_name, issued_date, issued_book_isbn, issued_emp_id) 
 VALUES
 ('IS106', 'C106', 'Animal Farm', '2024-03-10', '978-0-330-25864-8', 'E104'),
